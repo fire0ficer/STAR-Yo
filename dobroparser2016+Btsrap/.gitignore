@@ -1,0 +1,14 @@
+#folder logs
+logs/
+
+# txt files
+docs/*.txt
+
+# jpg files
+docs/*.jpg
+
+#fonts
+fonts/*
+
+*.css
+*.less

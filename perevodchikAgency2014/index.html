@@ -1,0 +1,113 @@
+<?session_start();
+include ('funct.php');?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE  HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Бюро переводов "Perevodchik"</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="images/favicon.gif" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<!--Header старт-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="header">
+  <div class="center">
+    <div id="logo"><a href="index.html">Perevodchik</a></div>
+    <!--Menu статует-->
+	<? if ($_SESSION['a']==NULL){ ?>
+	    <div id="menu">
+      <ul>
+        <li><a  class="active" href="index.html"><span>O нас</span></a></li>
+        <li><a href="ceni.php"><span>Наши цены и услуги</span></a></li>
+        <li><a href="autorize.php?zak=1"><span>Заказать перевод онлайн</span></a></li>
+        <li><a href="calc.php"><span>Подобрать тип перевода</span></a></li>
+		<li><a  href="autorize.php"><span>Авторизация</span></a></li>
+		<li><a href="kontakti.html"><span>Контакты</span></a></li>
+      </ul>	  
+    </div> 
+	<? }		else { ?>
+	<div id="menu">
+      <ul>
+	  <?  if ($_SESSION['a']==1) {  ?>
+        <li><a href="ceni.php "><span>Наши цены и услуги</span></a></li>
+        <li><a href="zakper.php"><span>Заказать перевод онлайн</span></a></li>
+        <li><a href="calc.php"><span>Подобрать тип перевода</span></a></li>
+		<? } ?>
+		<li><a href="vihod.php"><span>Закончить сеанс</span></a></li>
+		
+      </ul>
+	   </div><? } ?>
+	
+	
+	
+    <!--Menu конец-->
+		   </div>
+ </div>
+<!--Header конец-->
+
+<!--верхToprow начало-->
+
+<div id="toprow">
+  <div class="center1">
+  <?  if ($_SESSION['a']==1) pbok_menu(); 
+  if ($_SESSION['a']==2) ispok_menu();
+  if ($_SESSION['a']==3) manbok_menu();?>
+      <h1> О нас </h1>
+	<p>Сумское Бюро Переводов "Perevodchik" - это основанное в 2000 году, агентство профессиональных переводчиков. Мы находимся в городе Сумы, на северо-востоке Украины. Наше бюро предлагает услуги по переводу с русского, украинского, английского, французского, немецкого, португальского, испанского, итальянского, белорусского, польского, чешского, словацкого, голландского, греческого и прочих языков.
+	<p>Переводы выполняются дипломированными переводчиками с гарантией высокого качества работы, профессионального оформления и быстрых сроков исполнения. Наша группа переводчиков состоит из профессионалов, прошедших самую строгую проверку квалификации. Мы переводим документы как для государственных органов, так и для частных предприятий, пользуясь необходимой спецификой оформления документов и требованиями иностранных властей и международного права. Все документы будут заверены нотариусом, если такая процедура требуется.
+<p>Наша компания оказывает услуги по синхронному и последовательному переводу на переговорах, международных мероприятиях разного уровня с предоставлением профессионального конференц-оборудования.
+<p>Письменный перевод
+<br>Мы письменно переводим специализированные тексты разного уровня сложности (проектной и нормативной документации, тендерных предложений, чертежей и схем любого формата, инструкций и руководства по обслуживанию и др.) разных тематик. Мы выполняем все виды переводов, в том числе с использованием новейших технологий перевода и современного программного обеспечения.
+<p>Заверение переводов
+<br>Мы заверим перевод печатью компании, нотариально заверим переведенные документы.
+<p>Компьютерная верстка
+<br>Мы подготовим документы в Word или другой настольной издательской системе, отсканируем тексты и графики, подготовим оригинал - макеты, спечатаем (в том числе широкоформатная), сброшюруем, отредактируем текст перевода.
+<p>Hаше агентство работает как с физическими, так и юридическими лицами.
+Вы можете сделать заказ по переводу/легализации документов и оплатить услуги в своем городе, не выезжая к нам. Вы можете передать нам документы из любого города Украины и мира (электронной почтой, факсом, поездом, международной курьерской почтой FedEx, UPS, TNT, DHL и т.д.).
+  </div>
+</div>
+<!--верх Toprow конец-->
+<!--MiddleRow Begin-->
+
+<div id="midrow">
+
+  <div id="container">
+    <div class="box">
+	
+      <h1>Подобрать подходящий тип перевода</h1>
+      <a class="plan" href="calc.php">Business Plan</a>
+      <p><a></a><br />
+        <br />
+        <a href="calc.php" class="button"><span>Подобрать</span></a></p>
+    </div>
+    <div class="box">
+      <h1>Заказать перевод в режиме онлайн</h1>
+      <a class="whyus" href="autorize.php?zak=1">Заказать перевод в режиме онлайн</a>
+      <p><a><br />
+        <br />
+        <a href="autorize.php?zak=1" class="button"><span>Заказать </span></a></p>
+    </div>
+    <div class="box last">
+      <h1>Оценка заказа нашими менеджерами</h1>
+      <a class="support" href="autorize.php?zak=1"></a>
+      <p><a></a><br />
+        <br />
+        <a href="autorize.php?zak=1" class="button"><span>Заказать оценку</span></a></p>
+    </div>
+  </div>
+</div>
+<!--средняя часть MiddleRow конец-->
+<!--BottomRow низ старт-->
+<div id="bottomrow">
+  
+<!--BottomRow низ конец-->
+<!--футер начало-->
+<div id="footer">
+  <div class="foot">  <div align="center"> Бюро переводов "<a href="index.php">Perevodchik</a>" г. Cумы, ул. Б. Хмельницкого, д. 16, оф. 9 этаж <p> тел. +38(050)383-88-78 &nbsp;&nbsp;&nbsp;   +38(054)227-72-29 &nbsp;&nbsp;&nbsp;  +38(093)445-22-13 </div>  </div>
+</div>
+<!--футер конец-->
+</body>
+</html>

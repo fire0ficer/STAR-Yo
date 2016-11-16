@@ -1,0 +1,4 @@
+AddDefaultCharset utf-8
+php_value upload_max_filesize 100M
+AddType application/octet-stream .rar .doc .mov .avi .pdf .xls .mp4 .zip 
+AddHandler application/x-httpd-php .php .html .htm
