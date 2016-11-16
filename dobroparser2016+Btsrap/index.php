@@ -39,6 +39,7 @@
                            
                             
                             <textarea name="text" placeholder="Cюда делай ctrl+v" rows="10"></textarea>
+                            <a class="btn btn-xl btn-rounded" href="vashshans.php">Отправиться на поиски</a>
                             
                         </div>
                         <div class="col-sm-6">
