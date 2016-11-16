@@ -1,0 +1,80 @@
+*, html { font-family: Arial, sans-serif; } 
+
+
+/****************ERROoooRREEE*************/
+.errore{
+background:rgba(0,0,0, 0.5);
+border: 3px solid #000;
+text-align:center;
+text-shadow: 2px 2px 0 #000;
+border-radius: 15px;
+}
+.errore h2 , .errore h4{ color: red;}
+
+
+/****************/
+.vhod{
+	margin: 10px 5px;
+	border: 3px solid #000;
+	background:rgba(0,0,0, 0.5);
+	height: 80px;
+		}
+.vhod h4{margin:5px;}
+.vhod  a{
+		color:#fff;
+		text-shadow: 2px 2px 0px #000;
+		background: rgba( 255, 255, 255, 0.5);
+		margin:5px 0 5px 10px;
+		padding: 5px;
+		}
+.vhod  a:hover{
+			color:red;
+			text-shadow: 2px 2px 0 #fff;
+			}
+/**/
+.header  h2 {
+			text-align:left;
+			color: #363636;
+			text-shadow: 2px 2px 0 #CFCFCF,0px 0px 4px #CFCFCF;
+			font-size:30px;
+			}
+.span2{
+		background:rgba(255, 255, 255, 0.4);
+		margin: 0 5px 5px 10px;
+		padding: 5px 0 5px 0;
+		border: 2px outset #bbb;
+		box-shadow: 2px 2px 0 #000,0px 0px 2px #fff;
+		text-align:center;
+		}
+.span2 a {
+		color:#fff;
+		text-shadow: 2px 2px 0px #000;
+		font-size: 20px;
+		}
+.span2 a:hover{
+font-weight:bold;
+color:#fff;
+text-shadow: 2px 2px 0 red;
+}
+.f-search{
+float:right;
+display:inlain-block;
+margin-top:-40px;}	
+
+.lib{
+padding:5px 0 5px 0;
+font-size: 15px;
+font-weight: bold;
+}
+.lab{
+font-size:20px;
+color: #fff;
+
+}
+.but{
+margin-top:-10px;
+border: 3px outset #778899;
+box-shadow: 0px 0px 5px #fff;
+font-size:15px;
+font-weight: bold;
+}

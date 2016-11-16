@@ -1,0 +1,60 @@
+.span12, .span3, .span9{
+background:rgba(0, 0, 0, 0.4);
+margin-top:10px;
+}
+
+
+/************/
+.menu-1 a{ 
+color:#fff;
+padding-top:10px;
+font-size:25px;
+text-shadow: 0px 0px 3px #000,0 1px 3px #000;}
+
+.menu-1 a:hover{color:#fff;
+padding-top:1px;
+font-size:25px;
+text-shadow: 0px 0px 3px #000,0 1px 3px #000;}
+
+/************/
+
+/***************/
+.mag {
+display:inline-block;
+margin:10px;
+padding:5px;
+color:#fff;
+background:rgba(0, 0, 0, 0.4);
+box-shadow: 0px 0px 3px #fff,0 1px 3px #fff;
+}
+
+.mag  ul{
+float:right;
+padding-top:5px;
+}
+
+.mag  ul li{
+list-style:none;
+line-height:1;
+}
+.but-tov{
+margin-top:20px;
+border: 3px outset #778899;
+box-shadow: 0px 0px 5px #fff;
+font-size:15px;
+font-weight: bold;
+}
+
+.span3 h3 {
+color: #fff;
+text-shadow:0px 0px 3px #000,0 1px 3px #000;
+margin: 0 2px; 
+}
+.span3 ul li{
+color: #fff;
+text-shadow: 2px 2px 0 #000;
+list-style:none;
+}
+.span3 ul li:hover{
+text-decoration:underline;
+}
